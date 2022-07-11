@@ -7,6 +7,7 @@ import { useFirestore } from 'react-redux-firebase'
 
 function NewTicketForm(props){
   const firestore = useFirestore();
+  
   function addTicketToFireStone(event) {
     event.preventDefault();
     props.onNewTicketCreation();
