@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import TicketControl from "./TicketControl";
-import Signin from "./Signin";
+import SignIn from "./SignIn";
 import { BrowserRouter as Router, Switch, Route, } from "react-router-dom";
 
 function App(){
@@ -10,7 +10,7 @@ function App(){
       <Header />
       <Switch>
         <Route path="/signin">
-          <Signin />
+          <SignIn />
         </Route>
         <Route path="/">
           <TicketControl />

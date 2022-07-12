@@ -2,33 +2,37 @@ import React from "react";
 import firebase from "firebase/compat/app";
 
 function Signin(){
+
   function doSignUp(event) {
     event.preventDefault();
     const email = event.target.email.value;
     const password = event.target.password.value;
-    firebase.auth().createUserWithEmailandPassword(email, password).then(function(){
+    firebase.auth().createUserWithEmailAndPassword(email, password).then(function(){
       console.log("successfully signed up!");
-    }).catch(function(error){
+    }).catch(function(error) {
       console.log(error.message);
     });
   }
+
   function doSignIn(event) {
     event.preventDefault();
     const email = event.target.signinEmail.value;
     const password = event.target.signinPassword.value;
     firebase.auth().signInWithEmailAndPassword(email, password).then(function() {
-      console.log("Successfully signed in!");
+      console.log("Successfully Signed In!");
     }).catch(function(error) {
       console.log(error.message);
     });
   }
+
   function doSignOut() {
     firebase.auth().signOut().then(function() {
       console.log("Successfully signed out!");
     }).catch(function(error) {
       console.log(error.message);
     });
-  }  
+  }
+
   return (
     <React.Fragment>
       <h1>Sign up</h1>
@@ -58,7 +62,7 @@ function Signin(){
       <h1>Sign Out</h1>
       <button onClick={doSignOut}>Sign out</button>
     </React.Fragment>
-  )
+  );
 }
 
-export default Signin
+export default Signin;
