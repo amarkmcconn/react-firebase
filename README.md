@@ -58,6 +58,7 @@ _This is a React-Redux application for a help ticket queue that has backend inte
 We will also need to .env file to our project directory, as we want to protect our configuration from potentially malicious users.
 
 Our .env file with include the following:
+
 ```
 REACT_APP_FIREBASE_API_KEY = "YOUR-UNIQUE-CREDENTIALS"
 REACT_APP_FIREBASE_AUTH_DOMAIN = "YOUR-PROJECT-NAME.firebaseapp.com"
@@ -67,9 +68,10 @@ REACT_APP_FIREBASE_STORAGE_BUCKET = "YOUR-PROJECT-NAME.appspot.com"
 REACT_APP_FIREBASE_MESSAGING_SENDER_ID = "YOUR-PROJECT-SENDER-ID"
 REACT_APP_FIREBASE_APP_ID = "YOUR-PROJECT-APP-ID"
 ```
+
 You will then need to add .env to your .gitignore file and process a commit to protect your secret keys.
 
-Clone this repository: https://github.com/amarkmcconn/react-firebase
+Clone this repository: <https://github.com/amarkmcconn/react-firebase>
 
 In the project directory `REDUX-HELP-QUEUE` you can run:
 
