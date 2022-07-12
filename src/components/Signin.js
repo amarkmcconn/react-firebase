@@ -1,5 +1,6 @@
 import React from "react";
 import firebase from "firebase/compat/app";
+import { isLoaded } from 'react-redux-firebase';
 
 function Signin(){
 
@@ -32,7 +33,6 @@ function Signin(){
       console.log(error.message);
     });
   }
-
   return (
     <React.Fragment>
       <h1>Sign up</h1>

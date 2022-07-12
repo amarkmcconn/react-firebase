@@ -4,7 +4,7 @@ import Ticket from "./Ticket";
 
 // We need to import hooks functionality from both react-redux and react-redux-firebase.
 import { useSelector } from 'react-redux'
-import { useFirestoreConnect, isLoaded, isEmpty } from 'react-redux-firebase'
+import { useFirestoreConnect, isLoaded, } from 'react-redux-firebase'
 
 function TicketList(props){
   // The useFirestoreConnect() hook comes from react-redux-firebase.
